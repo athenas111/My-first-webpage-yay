@@ -1,0 +1,33 @@
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+ }
+
+ .main-gallery {
+    margin: 40px auto;
+    width: 90%;
+    text-align: center;
+ }
+ .gallery{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+ }
+
+ @media (max-width: 1148px) {
+   .gallery  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 10px 0;
+   
+
+   }
+
+   .gallery img {
+      margin: 10px 0;
+   }
+   
+ }

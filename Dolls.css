@@ -1,0 +1,82 @@
+.Dolls {
+    margin: 40px auto;
+    margin-right: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.doll img {
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+ 
+
+.doll {
+    flex-basis: 31%;
+    flex:2; /* Ajuste flexível que permite a distribuição uniforme */
+    position: relative;
+ overflow: hidden;
+}
+.doll:hover img {
+    opacity: 0.7; /* Torna a imagem um pouco transparente */
+    
+  }
+
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0;
+  width: fit-content;
+  padding-top: 70%;
+  transition: opacity 0.3s ease;
+   
+}
+
+.caption p {
+    color: white;
+    font-size: 1.5rem;
+   box-shadow: 0px 0px 12px 12px;
+   border-radius: 10px;
+   opacity: 0;
+   width: fit-content;
+}
+
+.doll:hover .caption{
+    opacity: 1;
+    
+    padding-top: 0;
+}
+
+.doll:hover p{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1148px) {
+    .Dolls {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .doll {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }

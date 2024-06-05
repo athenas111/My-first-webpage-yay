@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    
+}
+.about-left {
+    flex-basis: 50%;
+    position: relative;
+    display: flex;
+}
+
+.about-right {
+    flex-basis: 56%;
+}
+.about-left img {
+    border-radius: 10px;
+  
+}
+
+.about-img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    
+}
+
+.about-left .about-img:hover {
+    opacity: 0.7; /* Torna a imagem um pouco transparente */
+    transition: opacity 0.3s ease;
+  }
+ 
+  .about h3 {
+    font-weight: 600;
+    font-weight: 16px;
+    color: rgb(95, 95, 95);
+  }
+
+  .about h2 {
+    max-width: 400px;
+    margin: 10px 0;
+  }
+  @media (max-width: 1543px) {
+    .about-img {
+        width: 70%;
+        height: auto;
+        position: relative;
+        
+    }
+  }
+ 
+  @media (min-width: 1543px) {
+    .about-right {
+        flex-basis: 70%;
+        margin-left: -90%;
+    }
+  }
+ 
+ 

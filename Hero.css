@@ -1,0 +1,74 @@
+.Hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(250, 156, 237, 0.7),rgba(255, 255, 255, 0.7)), url('../../assets/1390_P_1605139159309.jpg') no-repeat  ;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+ max-width: 880px ;   
+}
+
+.hero-text h1{
+    font-size: 57px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-weight: 400;
+    margin: 5px auto auto 20px;
+    line-height: 1.4;
+    padding-bottom: 12px;
+    
+}
+
+ 
+.highlight{
+    color: #ffffff;
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px #fff, 
+        0 0 20px rgb(238, 126, 238), 
+        0 0 30px rgb(226, 134, 226), 
+        0 0 40px #f0f, 
+        0 0 50px rgb(211, 104, 211), 
+        0 0 75px rgb(250, 154, 250);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px #fff, 
+        0 0 20px rgb(238, 126, 238), 
+        0 0 30px rgb(226, 134, 226), 
+        0 0 40px #f0f, 
+        0 0 50px rgb(211, 104, 211), 
+        0 0 75px rgb(250, 154, 250);
+    }
+    to {
+        text-shadow: 
+            0 0 20px #fff, 
+            0 0 30px #fff, 
+            0 0 40px #fff, 
+            0 0 50px #f0f, 
+            0 0 60px #f0f, 
+            0 0 70px #f0f, 
+            0 0 80px #f0f, 
+            0 0 100px #f0f;
+    }
+}
+
+.btn img {
+    width: 10px;
+    margin-left: 10px;
+    display: inline-flex;
+}
